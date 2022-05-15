@@ -9,6 +9,9 @@ before_install:
 script:
   - docker run -e CI=true asad-mallick/docker-react npm run test
 
+
+# deploying the app
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
